@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Scrolling Effect with CSS & Vanilla Javascript</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <img src="img/bg.jpg" id="bg" />
+      <img src="img/moon.png" id="moon" />
+      <img src="img/mountain.png" id="mountain" />
+      <img src="img/road.png" id="road" />
+      <h2 id="text">Moon Light</h2>
+    </section>
+    <script type="text/javascript">
+      let bg = document.getElementById('bg');
+      let moon = document.getElementById('moon');
+      let mountain = document.getElementById('mountain');
+      let road = document.getElementById('road');
+      let text = document.getElementById('text');
+
+      window.addEventListener('scroll', function () {
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.5 + 'px';
+        moon.style.left = -value * 0.5 + 'px';
+        mountain.style.top = -value * 0.15 + 'px';
+        road.style.top = value * 0.15 + 'px';
+        text.style.top = value * 1 + 'px';
+      });
+    </script>
+    <div id="lorem">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie
+        dapibus faucibus. Vivamus consectetur nisl eget scelerisque accumsan.
+        Praesent ac enim in ligula tempor pharetra non sed sem. Proin ultrices
+        vulputate semper. Etiam nec nisi luctus, porttitor neque quis, porttitor
+      </p>
+      <br /><br />
+      <p>
+        erat. Nulla luctus accumsan laoreet. In quis erat ut sapien tempor
+        blandit sit amet vel tellus. Phasellus vel aliquam magna, id efficitur
+        justo. Curabitur vulputate nibh eu orci viverra, nec placerat lectus
+        blandit. Nam porta aliquet porta. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Pellentesque
+        quis velit augue. Donec condimentum nec massa quis posuere. Vivamus
+        vulputate, mi nec condimentum tempor, elit mauris consequat mauris, et
+        scelerisque arcu purus id nunc. Aenean eget aliquam lorem. In luctus
+        tempus auctor. Vestibulum mauris velit, vestibulum non fringilla non,
+        hendrerit eu ex. Quisque accumsan odio pellentesque nulla viverra porta
+      </p>
+      <br /><br />
+      <p>
+        quis vel orci. Suspendisse hendrerit felis libero, et auctor nibh
+        condimentum nec. Curabitur placerat euismod risus, gravida lobortis
+        neque molestie at. Vivamus lectus velit, imperdiet et scelerisque in,
+        consequat quis enim. Nullam euismod lectus erat, vel euismod leo
+        vehicula finibus. In id purus vel est feugiat tristique vitae at felis.
+        Etiam ac turpis et ante placerat rhoncus. Ut aliquam purus nec tellus
+        bibendum finibus. Vestibulum nisl urna, efficitur sit amet vulputate
+        nec, dignissim ac risus. Etiam feugiat ultricies justo, vel aliquet quam
+        blandit sed. Donec eu rhoncus justo. Duis semper consequat sem,
+      </p>
+      <br /><br />
+      <p>
+        vulputate placerat enim rutrum vitae. Aliquam erat volutpat. Duis
+        consectetur elementum ipsum non tincidunt. Etiam mauris neque, luctus
+        sed risus at, vulputate ullamcorper est. Nam vestibulum arcu eu lorem
+        hendrerit eleifend. Vivamus vel lobortis libero. In et vehicula ex, at
+        viverra leo. In sed nunc libero. Proin ornare neque quis justo
+        scelerisque auctor vitae a leo. Nam non eros neque. Praesent ac sodales
+        urna. Etiam suscipit tortor sed accumsan pharetra. Aliquam et erat vitae
+        metus pellentesque maximus vel fringilla risus. Nullam vitae libero eu
+        lacus consequat accumsan a a nisi. Proin ultrices pharetra magna.
+        Phasellus aliquet neque at sem sodales, in luctus nulla venenatis.
+      </p>
+      <br /><br />
+      <p>
+        Aliquam blandit lacinia nunc, at egestas tortor tristique ac. Quisque
+        blandit purus in elit commodo sollicitudin. Sed pretium, elit posuere
+        pharetra rutrum, urna nulla lacinia quam, eu scelerisque libero nunc ut
+        diam. Donec nunc purus, lobortis ac sollicitudin quis, maximus vel mi.
+        Proin lacus odio, condimentum eget dui id, consectetur maximus lacus.
+      </p>
+      <br /><br />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices
+        ligula eu vulputate sodales. Cras in fringilla magna. Proin imperdiet,
+        diam sed rhoncus laoreet, lectus quam consequat tellus, sit amet
+        bibendum ante velit quis est. Fusce mattis ipsum nec suscipit euismod.
+        Etiam efficitur quam nec erat fringilla fringilla. Donec vel nunc
+      </p>
+      <br /><br />
+      <p>
+        pretium, dignissim augue ut, egestas ipsum. In dictum, lacus in
+        malesuada commodo, libero eros suscipit enim, ac dictum nibh urna et
+        sapien. Ut posuere lobortis sapien, nec dictum tortor mollis eget.
+        Aliquam sit amet nibh ut nunc tincidunt lacinia. Nam non viverra lectus.
+        Aliquam eget consequat metus. Sed vestibulum dui vel mollis
+        sollicitudin. Fusce sodales massa ut dui elementum sagittis. Suspendisse
+        sit amet ex ut orci convallis fringilla non a odio.
+      </p>
+      <br /><br />
+    </div>
+    <div id="inspire">
+      inspired by "Simple Parallax Scrolling Effect with CSS & Vanilla
+      Javascript" on Youtube.
+    </div>
+  </body>
+</html>

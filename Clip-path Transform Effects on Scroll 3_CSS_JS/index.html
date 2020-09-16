@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clip-path Transform Effects on Scroll 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 class="title">Scroll To See Magic...</h2>
+    <section></section>
+    <div class="container">
+      <h2>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </h2>
+      <br /><br />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu mi ut
+        tellus scelerisque sodales sed vel sem. Suspendisse potenti. Quisque
+        ligula ligula, vehicula ut sem sit amet, tristique posuere eros. Quisque
+        molestie diam sit amet varius efficitur. Suspendisse commodo, purus quis
+        rutrum convallis, purus neque dignissim turpis, accumsan volutpat nisl
+        felis ac sapien. Pellentesque non est quis ligula lobortis gravida non
+        et velit. Suspendisse imperdiet, leo eget ullamcorper sollicitudin,
+        ipsum tortor accumsan justo, sit amet feugiat mi nulla sit amet eros.
+        Suspendisse cursus pellentesque neque, a porta ex tempor ac. Morbi dui
+        urna, viverra at erat eu, consectetur tempus quam. Suspendisse a
+        convallis velit.
+      </p>
+      <br /><br />
+      <p>
+        Quisque placerat eget lacus eget posuere. Etiam sit amet nisl at enim
+        tempus commodo. Ut sagittis ac dui sed interdum. Etiam vestibulum nunc
+        quis sapien pretium rutrum. Integer ac enim magna. Vivamus fermentum
+        nisi ligula, ut venenatis augue finibus vitae. Duis fermentum eros in
+        magna tempus ultricies. Vestibulum vitae metus diam. Donec eget dolor
+        ornare mi aliquam malesuada. Etiam et lorem at elit suscipit viverra.
+        Mauris eleifend tortor maximus tortor consequat finibus. Maecenas
+        maximus sem non purus pretium, et vehicula nibh malesuada.
+      </p>
+      <br /><br />
+      <p>
+        Nunc vel faucibus ex. Vestibulum magna sem, euismod eu ultrices eget,
+        tempor consequat ligula. Aenean commodo massa nec sem semper tincidunt.
+        Mauris neque quam, pellentesque eget ex non, fermentum blandit leo.
+        Mauris blandit hendrerit orci, ac laoreet enim iaculis eget. Fusce
+        accumsan nec dui sodales viverra. Etiam venenatis nulla non risus
+        fringilla, id pulvinar libero semper. Integer felis metus, cursus eu
+        pretium rhoncus, varius et libero. Praesent a libero lectus. Vestibulum
+        egestas ultricies tellus, a feugiat justo imperdiet quis. Phasellus ut
+        neque vehicula, maximus nisl nec, consectetur risus. Donec dictum ante
+        in nulla faucibus, sed pellentesque felis imperdiet. Nulla sit amet leo
+        metus. Nullam elementum velit a lectus molestie tempor. Nunc vel felis
+        eget libero iaculis ullamcorper. Nam convallis ultrices vulputate.
+      </p>
+      <br /><br />
+      <p>
+        Duis finibus suscipit libero sed condimentum. Etiam blandit nec elit
+        hendrerit placerat. Curabitur volutpat accumsan ipsum, sit amet
+        fermentum purus pellentesque quis. Proin est leo, semper ac ultricies
+        ac, tristique rutrum dolor. Aliquam suscipit dictum mollis. Nulla
+        facilisi. Fusce sed volutpat ipsum. Praesent tristique sem nec ligula
+        placerat, non imperdiet risus molestie. Maecenas eu orci tempus,
+        elementum orci a, tempor leo.
+      </p>
+      <br /><br />
+      <p>
+        Etiam massa lectus, condimentum sit amet urna quis, scelerisque dictum
+        mi. Vivamus nec lacus ac elit suscipit mollis. Quisque tincidunt tellus
+        metus, nec euismod metus ornare eu. Sed orci massa, dignissim sed libero
+        non, aliquet porttitor lectus. Mauris feugiat lectus sit amet bibendum
+        molestie. Phasellus consequat volutpat risus, ut elementum ex tristique
+        ut. Vivamus rutrum ligula dolor, in rutrum tellus facilisis eget.
+        Pellentesque eu nunc ut ex sagittis posuere. Sed sit amet ultrices
+        lorem.
+      </p>
+      <br /><br />
+    </div>
+    <script type="text/javascript">
+      var section = document.querySelector('section');
+      window.addEventListener('scroll', function () {
+        var value = window.scrollY;
+        section.style.clipPath = 'circle(' + value + 'px at center)';
+      });
+    </script>
+  </body>
+</html>
