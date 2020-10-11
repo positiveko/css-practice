@@ -1,0 +1,104 @@
+body {
+  background-color: black;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  color: white;
+  /* background-color: white; */
+}
+
+.name {
+  color: #78c137;
+  display: inline-block;
+}
+
+.name.markup {
+  color: #5d86d3;
+}
+
+.wrapper {
+  margin-left: 10em;
+}
+
+.method {
+  font-size: 1.4rem;
+  border-radius: 0.3em;
+  background-color: #78c137;
+  float: left;
+  padding: 0.3em;
+  margin-bottom: 0.3em;
+  margin-right: 0.3em;
+  color: white;
+  line-height: 2.4;
+}
+
+.method.markup {
+  background-color: #5d86d3;
+}
+
+.method::before {
+  content: '.';
+  /* .과 fadeIn 사이 간격 없애기 */
+  float: left;
+}
+
+.method-list {
+  /* ...이 한 줄로 붙도록 */
+  float: right;
+}
+
+.method-list::before {
+  content: '(';
+  float: left;
+  margin: 0.1em;
+}
+
+.method-list::after {
+  content: ')';
+  float: right;
+  margin: 0.1em;
+}
+
+.type {
+  color: #000;
+  background-color: yellow;
+  float: left;
+  text-align: center;
+  width: 2.4em;
+  height: 2.4em;
+  border-radius: 50%;
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 0.3em;
+  /* 자식인 , 에게 absolute를 주었고 부모에게 relative를 주어 부모를 기준으로 하는 위치에 있도록 한다. */
+  position: relative;
+}
+
+.type.obj {
+  background-color: orange;
+}
+
+.type.str {
+  background-color: teal;
+}
+
+.type::after {
+  content: ',';
+  position: absolute;
+  right: -3px;
+  bottom: -10px;
+  color: white;
+}
+
+.type:last-child {
+  margin-right: 0;
+}
+
+.type:last-child::after {
+  display: none;
+}
